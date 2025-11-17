@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laurea University of Applied Sciences - Job Application</title>
+
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<!-- ================= HEADER SECTION ================= -->
+<header>
+    <h1>Laurea University of Applied Sciences</h1>
+</header>
+
+<!-- ================= NAVIGATION LINKS ================= -->
+<nav>
+    <!-- These links jump to sections on the same page -->
+    <a href="#form">Application Form</a>
+    <a href="#quote">Quote</a>
+    <a href="#media">Laurea Media</a>
+</nav>
+
+<!-- ================= MAIN FORM SECTION ================= -->
+<section id="form">
+    <h2>Student Assistant Job Application</h2>
+
+    <!-- Job application form starts here -->
+    <!-- autocomplete and aria-label added for accessibility -->
+    <form action="#" method="POST" autocomplete="on" aria-label="Student Job Application Form">
+
+        <!-- Text input for full name -->
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Jane Student" required minlength="2" maxlength="50" pattern="[A-Za-z\s]+" aria-required="true">
+
+        <!-- Text input for email -->
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="you@student.laurea.fi" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+
+        <!-- Password input for account security -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter password" required>
+
+        <!-- Number input for years of experience -->
+        <label for="experience">Years of Experience:</label>
+        <input type="number" id="experience" name="experience" min="0" max="40">
+
+        <!-- Range input for salary expectation -->
+        <label for="salary">Expected Salary Range:</label>
+        <input type="range" id="salary" name="salary" min="0" max="5000" step="100">
+
+        <!-- Checkboxes for job preferences -->
+        <fieldset>
+            <legend>Job Preferences:</legend>
+            <label><input type="checkbox" name="preference" value="remote"> Remote Work</label>
+            <label><input type="checkbox" name="preference" value="campus"> On Campus</label>
+            <label><input type="checkbox" name="preference" value="parttime"> Part-Time</label>
+        </fieldset>
+
+        <!-- Radio buttons for job type -->
+        <fieldset>
+            <legend>Job Type:</legend>
+            <label><input type="radio" name="jobtype" value="assistant"> Student Assistant</label>
+            <label><input type="radio" name="jobtype" value="internship"> Internship</label>
+        </fieldset>
+
+        <!-- Dropdown list for department selection -->
+        <label for="department">Department:</label>
+        <select id="department" name="department">
+            <option value="IT">Information Technology</option>
+            <option value="Business">Business</option>
+            <option value="Nursing">Nursing</option>
+            <option value="Media">Media</option>
+        </select>
+
+        <!-- Datalist for campus preference (auto-suggestions) -->
+        <label for="campus">Campus Preference:</label>
+        <input list="campuses" id="campus" name="campus" placeholder="Type or select campus">
+        <datalist id="campuses">
+            <option value="Leppävaara">
+            <option value="Tikkurila">
+            <option value="Hyvinkää">
+        </datalist>
+
+        <!-- Textarea for motivation letter -->
+        <label for="motivation">Motivation Letter:</label>
+        <textarea id="motivation" name="motivation" rows="4" cols="30" placeholder="Why would you like to work with us?"></textarea>
+
+        <!-- Disabled and readonly input examples -->
+        <label for="refcode">Referral Code (disabled):</label>
+        <input type="text" id="refcode" value="LAUREAREF123" disabled>
+
+        <label for="appid">Application ID (readonly):</label>
+        <input type="text" id="appid" value="LAU2025APP" readonly>
+
+        <!-- Submit button to send form -->
+        <input type="submit" value="Send Application">
+    </form>
+</section>
+
+<!-- ================= QUOTE SECTION ================= -->
+<section id="quote">
+    <h2>Inspirational Quote</h2>
+    <blockquote>"The future belongs to those who believe in the beauty of their dreams." – Eleanor Roosevelt</blockquote>
+</section>
+
+<!-- ================= ASIDE WITH EMBEDDED MEDIA ================= -->
+<aside id="media">
+    <h3>Laurea Media</h3>
+    <!-- Using <embed> to show an external image or document -->
+    <embed src="https://www.laurea.fi/globalassets/laurea-logo.png" type="image/png" width="200" height="100">
+</aside>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <p>© 2025 Laurea University of Applied Sciences</p>
+</footer>
+
+</body>
+</html>
