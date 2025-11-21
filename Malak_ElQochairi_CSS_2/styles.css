@@ -1,0 +1,124 @@
+/* =========================
+   Global Styles
+========================= */
+body {
+    font-family: 'Montserrat', Arial, sans-serif; /* Google font with fallback */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f5f5f5; /* named color */
+    color: #333333; /* hex color */
+}
+
+/* =========================
+   Header Styles
+========================= */
+.header {
+    background-color: rgb(50, 50, 200); /* RGB color */
+    color: white;
+    padding: 20px;
+    position: sticky; /* sticky positioning */
+    top: 0;
+    z-index: 100; /* Ensures header stays on top */
+    text-align: center;
+}
+
+.nav a {
+    display: inline-block; /* inline-block for spacing */
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700; /* numeric value */
+    text-transform: uppercase; /* uppercase text */
+    letter-spacing: 1px; /* letter spacing */
+}
+
+.nav a:hover {
+    color: rgba(255, 255, 0, 0.8); /* opacity with rgba */
+}
+
+/* =========================
+   Introduction Section
+========================= */
+.intro {
+    padding: 30px 20px;
+    text-align: center;
+    background-color: hsl(270, 50%, 90%); /* HSL color */
+    font-style: italic; /* italic text */
+    word-spacing: 4px; /* word spacing */
+}
+
+.home-gallery {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f0f0f0; /* subtle background to separate from intro */
+}
+
+.home-gallery h2 {
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.home-gallery .thumbnails img {
+    width: 150px; /* thumbnail size */
+    margin: 10px;
+    border: 2px solid #ccc;
+    transition: transform 0.3s;
+}
+
+.home-gallery .thumbnails img:hover {
+    transform: scale(1.05); /* slight zoom on hover */
+}
+
+/* =========================
+   Gallery Section
+========================= */
+.gallery {
+    display: flex; /* flex layout */
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+}
+
+.artwork {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    margin: 15px;
+    width: 250px;
+    text-align: center;
+    float: left; /* float example */
+    clear: both; /* clear after float */
+    position: relative; /* relative positioning */
+}
+
+.artwork img {
+    width: 100%;
+    display: block; /* block display */
+}
+
+.artwork h3 {
+    margin: 10px 0;
+    font-weight: bold; /* keyword value */
+}
+
+/* Example of absolute positioning for captions */
+.artwork h3::after {
+    content: '★';
+    position: absolute;
+    top: 0;
+    right: 10px;
+    color: gold;
+}
+
+/* =========================
+   Footer
+========================= */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
