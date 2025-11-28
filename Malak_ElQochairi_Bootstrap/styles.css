@@ -1,0 +1,61 @@
+/* ----------------- HERO SECTION ----------------- */
+.hero {
+    position: relative;
+    background: url("images/hero.jpeg") center/cover no-repeat;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding-top: 80px;
+    overflow: hidden;
+}
+
+/* Overlay div inside hero */
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4); /* 40% opacity dark layer */
+    z-index: 0;
+}
+
+/* Hero text container sits above overlay */
+.hero .hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Hero text shadow for better readability */
+.hero h1, 
+.hero p {
+    text-shadow: 0px 3px 8px rgba(0,0,0,0.7);
+}
+
+/* ----------------- SECTION SPACING ----------------- */
+section {
+    scroll-margin-top: 90px;
+}
+
+/* ----------------- TESTIMONIALS ----------------- */
+.carousel-item {
+    padding: 40px;
+}
+
+/* ----------------- BUTTONS ----------------- */
+.btn-primary {
+    background-color: #6a4bc3;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #5639a8;
+}
+
+/* ----------------- PROFILE IMAGE ----------------- */
+img.rounded-circle {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
